@@ -4,6 +4,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vertex-Software-Corporation/aws-credentials-js"
+  },
   "scripts": {
     "build": "tsc"
   },
@@ -12,7 +16,7 @@
   ],
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "devDependencies": {
     "@types/node": "^22.8.4",
