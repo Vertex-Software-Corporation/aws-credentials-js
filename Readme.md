@@ -14,8 +14,8 @@ npm install @vertex-corp/aws-credentials
 
 The `vertexProvider` function can be used in the same way as the `fromIni` provider. It accepts the same parameters and returns the same type of credentials.
 
-
-> **NOTE** By default, it will look for AWS configuration file `aws.config` in the project's root directory.
+> [!NOTE]  
+> By default, it will look for AWS configuration file `aws.config` in the project's root directory.
 
 ## Example
 
