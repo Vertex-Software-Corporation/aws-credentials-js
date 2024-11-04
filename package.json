@@ -1,6 +1,6 @@
 {
   "name": "@vertex-corp/aws-credentials",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -8,8 +8,22 @@
     "type": "git",
     "url": "https://github.com/Vertex-Software-Corporation/aws-credentials-js"
   },
+  "exports": {
+    ".": {
+      "node": {
+        "module-sync": "./dist/index.js",
+        "default": "./dist/cjs/index.js"
+      },
+      "require": {
+        "default": "./dist/cjs/index.js"
+      },
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc --declaration",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs && echo '{\"type\": \"commonjs\"}' > dist/cjs/package.json"
   },
   "files": [
     "dist"

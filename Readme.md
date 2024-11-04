@@ -20,7 +20,7 @@ The `vertexProvider` function can be used in the same way as the `fromIni` provi
 ## Example
 
 ```ts
-import vertexProvider from '@vertex-corp/aws-credentials';
+import { vertexProvider } from '@vertex-corp/aws-credentials';
 
 const credentials = vertexCustomProvider();
 
@@ -31,7 +31,7 @@ console.log(credentials);
 
 ```ts
 import { S3Client, ListBucketsCommand } from '@aws-sdk/client-s3';
-import vertexProvider from '@vertex-corp/aws-credentials';
+import { vertexProvider } from '@vertex-corp/aws-credentials';
 
 const client = new S3Client({
   credentials: vertexProvider(),
