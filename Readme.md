@@ -22,7 +22,7 @@ The `vertexProvider` function can be used in the same way as the `fromIni` provi
 ```ts
 import { vertexProvider } from '@vertex-corp/aws-credentials';
 
-const credentials = vertexCustomProvider();
+const credentials = vertexProvider();
 
 console.log(credentials);
 ```
