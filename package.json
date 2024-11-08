@@ -1,6 +1,6 @@
 {
   "name": "@vertex-corp/aws-credentials",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -19,6 +19,17 @@
       },
       "default": "./dist/index.js",
       "types": "./dist/index.d.ts"
+    },
+    "./env": {
+      "node": {
+        "module-sync": "./dist/env.js",
+        "default": "./dist/cjs/env.js"
+      },
+      "require": {
+        "default": "./dist/cjs/env.js"
+      },
+      "default": "./dist/env.js",
+      "types": "./dist/env.d.ts"
     }
   },
   "scripts": {

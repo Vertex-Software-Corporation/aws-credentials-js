@@ -12,6 +12,18 @@ npm install @vertex-corp/aws-credentials
 
 ## Usage
 
+Early in your application, you should call the `setupAWSEnvironment` function to set up the environment variables that the AWS SDK will use to find the AWS configuration file. Before any AWS SDK client is created, you should call this function.
+
+```js
+import { setupAWSEnvironment } from '@vertex-corp/aws-credentials/env';
+
+setupAWSEnvironment();
+```
+
+---
+
+You can also use the `vertexProvider` function to get the credentials object directly for each client.
+
 The `vertexProvider` function can be used in the same way as the `fromIni` provider. It accepts the same parameters and returns the same type of credentials.
 
 > [!NOTE]  
