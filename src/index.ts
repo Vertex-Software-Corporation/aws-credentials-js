@@ -27,3 +27,5 @@ export function vertexProvider(init?: Parameters<typeof fromIni>[0]) {
     fromNodeProviderChain(init)
   );
 }
+
+export { setupAWSEnvironment as config } from './env.js';
